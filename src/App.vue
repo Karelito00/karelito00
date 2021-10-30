@@ -1,28 +1,64 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app style="background-color: #353535; overflow: auto">
+    <v-app-bar
+      app
+      color="#ebebeb"
+      dark
+    >
+    <span class="animation-p"> Don't touch me, Hello World!!</span>
+    </v-app-bar>
+
+    <v-main>
+      <Content/>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Content from './components/Content';
 
 export default {
   name: 'App',
+
   components: {
-    HelloWorld
-  }
-}
+    Content,
+  },
+
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="scss" scoped>
+.animation-p {
+  animation-duration: 40s;
+  color: #353535;
+  font-size: 25px;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  margin-bottom: 0px;
+  &:before {
+    content: "😄";
+  }
+  cursor: pointer;
+  &:active {
+    &:before {
+      content: "😡";
+    }
+    animation-play-state: paused;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 10px;
+  }
+
+  50% {
+    margin-left: calc(100% - 360px);
+  }
+
+  to {
+    margin-left: 10px;
+  }
 }
 </style>
