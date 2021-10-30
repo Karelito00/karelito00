@@ -1,24 +1,5 @@
-# cv-web
+## Hi, I'm Karel Díaz  🤓.
 
-## Project setup
-```
-yarn install
-```
+I'm currently studying Computer Science at University of Havana, know more [about me](https://github.com/Karelito00/cv-karel).
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=karelito00&show_icons=true&theme=radical&count_private=true)
