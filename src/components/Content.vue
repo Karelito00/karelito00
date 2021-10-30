@@ -20,7 +20,15 @@
         class="info-container"
         style="color: #353535; font-size: 18px"
       >
-        <h1>Hi, I'm Karel Díaz</h1>
+        <div class="d-flex justify-space-between">
+          <h1>Hi, I'm Karel Díaz</h1>
+          <a
+            style="text-decoration: none"
+            href="https://drive.google.com/file/d/1EVXOKm5cv9dBGDoW15BygbO3eRq6am21/view?usp=sharing"
+            target="_blanck"
+            >Download</a
+          >
+        </div>
         <p style="font-size: 18px">
           Developer, passionate about what I do 💻. I'm student of Computer
           Science at University of Havana. I play chess in my free times, and
