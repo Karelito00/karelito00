@@ -2,7 +2,7 @@
   "name": "cv-web",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://karelito00.github.io/cv-karel",
+  "homepage": "https://karelito00.github.io/karelito00",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
