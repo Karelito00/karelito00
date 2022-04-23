@@ -5,7 +5,7 @@
       color="#ebebeb"
       dark
     >
-    <span class="animation-p"> Don't touch me, Hello World!!</span>
+    <span class="animation-p"> Hello World!!</span>
     </v-app-bar>
 
     <v-main>
@@ -54,7 +54,7 @@ export default {
   }
 
   50% {
-    margin-left: calc(100% - 360px);
+    margin-left: calc(100% - 190px);
   }
 
   to {

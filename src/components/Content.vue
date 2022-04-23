@@ -154,7 +154,6 @@ export default {
     background-color: #ebebeb;
     border-radius: 4px;
     .avatar-container {
-      box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
       margin-bottom: 20px;
     }
     .menu-container {
@@ -167,9 +166,7 @@ export default {
         a {
           display: flex;
           align-items: center;
-          text-decoration: none;
           p {
-            color: #353535;
             margin-left: 10px;
             margin-bottom: 0;
           }
