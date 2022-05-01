@@ -121,7 +121,7 @@
           <li>Scrum methodology</li>
         </ul>
         <h3 style="margin-top: 30px">Other projects</h3>
-        <h4 style="margin-top: 10px">Search enginge</h4>
+        <h4 style="margin-top: 10px">Search engine</h4>
         <p> I develop a search engine using VueJs for frontend, and fastapi for backend, is based in 
         a vectorial model of information retrieve and was created with the help of some tools of NPL and using glove, 
         a model pretrained for words embedding.</p>
