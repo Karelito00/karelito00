@@ -12,7 +12,7 @@
           <img :src="profileImage" alt="karel" />
         </v-avatar>
         <h1 v-if="menu" style="color: #353535">Karel Díaz</h1>
-        <div style="display: flex; justify-content: center">
+        <div style="display: flex; justify-content: center; width: 150px">
           <div
             v-for="(network, index) in networks"
             class="social-net"

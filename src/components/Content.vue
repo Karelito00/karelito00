@@ -44,7 +44,7 @@
           <li>Backend developer using serverless, aws, typescript</li>
           <li>
             AWS (CloudFront, CodePipeline, S3, CodeBuild, Lambda, Api Gateway,
-            Database Migration Service, IAM Managment, DynamoDB)
+            Database Migration Service, IAM Management, DynamoDB)
           </li>
           <li>Swagger</li>
           <li>Git, gitflow, github</li>
