@@ -1,15 +1,11 @@
 <template>
-  <v-app style="background-color: #353535; overflow: auto">
-    <v-app-bar
-      app
-      color="#ebebeb"
-      dark
-    >
-    <span class="animation-p"> Hello World!!</span>
+  <v-app style="background-color: #353535; min-width: 515px">
+    <v-app-bar app color="#ebebeb" dark class="cv-bar">
+      <span class="animation-p"> Hello World!!</span>
     </v-app-bar>
 
-    <v-main>
-      <Content/>
+    <v-main class="cv-main">
+      <Content />
     </v-main>
   </v-app>
 </template>
@@ -23,42 +19,50 @@ export default {
   components: {
     Content,
   },
-
 };
 </script>
 
 <style lang="scss" scoped>
-.animation-p {
-  animation-duration: 40s;
-  color: #353535;
-  font-size: 25px;
-  animation-name: slidein;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  margin-bottom: 0px;
-  &:before {
-    content: "😄";
+.cv-bar {
+  @media (max-width: 700px) {
+    display: none;
   }
-  cursor: pointer;
-  &:active {
+  .animation-p {
+    animation-duration: 40s;
+    color: #353535;
+    font-size: 25px;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin-bottom: 0px;
     &:before {
-      content: "😡";
+      content: '😄';
     }
-    animation-play-state: paused;
+    cursor: pointer;
+    &:active {
+      &:before {
+        content: '😡';
+      }
+      animation-play-state: paused;
+    }
+  }
+  @keyframes slidein {
+    from {
+      margin-left: 10px;
+    }
+
+    50% {
+      margin-left: calc(100% - 190px);
+    }
+
+    to {
+      margin-left: 10px;
+    }
   }
 }
-
-@keyframes slidein {
-  from {
-    margin-left: 10px;
-  }
-
-  50% {
-    margin-left: calc(100% - 190px);
-  }
-
-  to {
-    margin-left: 10px;
+.cv-main {
+  @media (max-width: 700px) {
+    padding: 0 !important;
   }
 }
 </style>
