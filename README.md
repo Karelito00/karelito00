@@ -1,1 +1,1 @@
-## Hi, I'm Karel Díaz  🤓.
+## Hi, I'm Karel Diaz  🤓.
